@@ -1,0 +1,165 @@
+@import '../variables';
+
+// header
+header {
+  background: $color-input;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+
+  .header-container, .nav, .logo {
+    @extend %flex-center;
+  }
+
+  .header-container {
+    justify-content: space-between;
+    padding: 0 30px;
+    height: 80px;
+  }
+
+  .nav {
+    height: 100%;
+  }
+
+  .title {
+    font-size: 20px;
+    color: white;
+    padding: 0 20px;
+    cursor: pointer;
+  }
+
+  .title:hover {
+    color: $color-light-orange;
+  }
+
+  .title-logo {
+    color: $color-light-orange;
+  }
+
+  .logo {
+    justify-content: flex-start;
+
+    img {
+      margin-right: 10px;
+
+      &.logo-ico {
+        margin-bottom: 9px;
+      }
+    }
+  }
+}
+
+.buttons {
+  height: 100%;
+  @extend %flex-center;
+  justify-content: center;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: calc(50% + 17px);
+    height: 15px;
+    width: 1px;
+    top: 50%;
+    margin-top: -7px;
+    background: rgba(255, 255, 255, 0.5);
+  }
+
+  button {
+    height: 100%;
+    width: 140px;
+    background: transparent;
+    color: $color-white;
+    border-bottom: 1px solid transparent;
+    text-transform: uppercase;
+    @extend %flex-center;
+    margin-left: 35px;
+
+    .ico {
+      margin-right: 10px;
+    }
+
+    &.active {
+      border-bottom: 1px solid $color-orange;
+    }
+  }
+}
+
+// body
+
+.menu-flex {
+  flex: 1 1 auto;
+}
+
+.image-text {
+  background-color: rgb(255, 255, 255, 0.64);
+  bottom: 0;
+  width: 100%;
+  padding: 50px 0px;
+  text-align: center;
+}
+
+.example-card {
+  min-height: 460px;
+  border: 2px gray;
+}
+
+.mat-card-header {
+  display: block;
+}
+
+.mat-card-content {
+  height: 100px;
+}
+
+.services {
+  text-align: center;
+  font-size: 50px;
+  padding: 20px 0;
+}
+
+.services span {
+  margin: auto;
+}
+
+.about span {
+  margin: auto;
+  text-align: center;
+  font-size: 25px;
+  padding: 20px 0;
+}
+
+.background-sample {
+
+}
+
+.padd-top-20 {
+  padding-top: 20px;
+}
+
+.about {
+  background: #424242;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  padding: 30px 20px 30px 0;
+  margin: 30px 0;
+}
+
+.about-content {
+  margin-right: 80px;
+  margin-left: 80px;
+  font-size: 20px;
+  line-height: 2;
+}
+
+.contact {
+  text-align: center;
+  font-size: 14px;
+  padding: 30px 20px 30px 0;
+  margin: 30px 0;
+}
+
+.contact input,
+.contact textarea {
+  margin: 20px 0;
+}

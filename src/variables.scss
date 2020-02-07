@@ -1,0 +1,57 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "styles/bootstrap_variables";
+
+%font-14 {
+  font-size: 14px;
+}
+
+%font-16 {
+  font-size: 16px;
+}
+
+%font-18 {
+  font-size: 18px;
+}
+
+%font-20 {
+  font-size: 20px;
+}
+
+%opensans-regular {
+  font-family: 'OpenSans', sans-serif;
+}
+
+%opensans-bold {
+  font-family: 'OpenSans-Bold', sans-serif;
+}
+
+.mt-37 {
+  margin-top: 37px;
+}
+
+%flex-center {
+  display: flex;
+  align-items: center;
+}
+
+// fonts
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url('/assets/fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+  url('/assets/fonts/OpenSans-Bold.woff') format('woff'),
+  url('/assets/fonts/OpenSans-Bold.ttf') format('truetype'),
+  url('/assets/fonts/OpenSans-Bold.svg#OpenSans-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('/assets/fonts/OpenSans.eot?#iefix') format('embedded-opentype'),
+  url('/assets/fonts/OpenSans.woff') format('woff'),
+  url('/assets/fonts/OpenSans.ttf') format('truetype'),
+  url('/assets/fonts/OpenSans.svg#OpenSans') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
