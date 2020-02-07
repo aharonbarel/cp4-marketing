@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "concept-marketing": {
+    "cp4-marketing": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/concept-marketing",
+            "outputPath": "dist/cp4-marketing",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -68,18 +68,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "concept-marketing:build"
+            "browserTarget": "cp4-marketing:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "concept-marketing:build:production"
+              "browserTarget": "cp4-marketing:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "concept-marketing:build"
+            "browserTarget": "cp4-marketing:build"
           }
         },
         "test": {
@@ -117,16 +117,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "concept-marketing:serve"
+            "devServerTarget": "cp4-marketing:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "concept-marketing:serve:production"
+              "devServerTarget": "cp4-marketing:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "concept-marketing"
+  "defaultProject": "cp4-marketing"
 }

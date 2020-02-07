@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  title = 'concept-marketing';
+  title = 'cp4-marketing';
 
 }
